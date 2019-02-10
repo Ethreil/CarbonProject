@@ -115,12 +115,4 @@ public class Researcher {
 		return rateOfChange * (yearDateDub - yearTwoDub) + getAvgCO2(yearTwo);
 	}
 	
-	public static double getFutureCO2MinusFive (String yearOne, String yearTwo, String yearDate) {
-		
-		double rateOfChange = getRateOfChange(yearOne, yearTwo);
-		double yearTwoDub = Double.valueOf(yearTwo);
-		double yearDateDub = Double.valueOf(yearDate);
-		
-		return 0.95 * (yearDateDub - yearTwoDub) + getAvgCO2(yearTwo);
-	}
 }
